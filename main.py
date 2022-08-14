@@ -27,5 +27,5 @@ else:
 if __name__ == '__main__':
   try:
     menu()
-  except Exception:
+  except:
     pass
