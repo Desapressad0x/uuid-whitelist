@@ -1,3 +1,4 @@
+import platform
 import os
 import requests
 import time
@@ -12,7 +13,7 @@ hwid = str(subprocess.check_output('wmic csproduct get uuid')).split('\\r\\n')[1
 request = session.get('https://pastebin.com/raw/LINK', verify=False)
 
 def menu():
-    os.system('cls' if os.name == 'nt' else 'clear')
+    subprocess.run('cls' if platform.system() == 'Windows' else 'clear', shell=True)
     print("oi")
 
 if hwid in request.text:
