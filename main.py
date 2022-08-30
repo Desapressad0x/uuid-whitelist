@@ -22,10 +22,7 @@ if hwid in request.text:
 else:
    print("HWID não autorizado")
    time.sleep(2.4)
-   quit()
+   exit()
 
 if __name__ == '__main__':
-  try:
     menu()
-  except:
-    pass
