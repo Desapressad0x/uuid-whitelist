@@ -12,7 +12,7 @@ urllib3.disable_warnings()
 hwid = str(subprocess.check_output('wmic csproduct get uuid')).split('\\r\\n')[1].strip('\\r').strip()
 request = session.get('https://pastebin.com/raw/LINK', verify=False)
 
-def menu():
+def menu() -> None:
     subprocess.run('cls' if platform.system() == 'Windows' else 'clear', shell=True)
     print("oi")
 
