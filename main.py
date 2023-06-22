@@ -14,7 +14,7 @@ request = session.get('https://pastebin.com/raw/LINK', verify=False)
 
 def menu() -> None:
   subprocess.run('cls' if platform.system() == 'Windows' else 'clear', shell=True)
-  print("oi")
+  print("hi")
 
 if hwid in request.text:
   print("Authorized HWID, redirecting...")
