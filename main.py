@@ -17,11 +17,11 @@ def menu() -> None:
     print("oi")
 
 if hwid in request.text:
-   print("HWID autorizado, redirecionando...")
+   print("Authorized HWID, redirecting...")
    time.sleep(2.4)
    menu()
 else:
-   print("HWID não autorizado")
+   print("Unauthorized HWID")
    time.sleep(2.4)
    exit()
 
