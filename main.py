@@ -13,7 +13,7 @@ hwid = str(subprocess.check_output('wmic csproduct get uuid')).split('\\r\\n')[1
 request = session.get('https://pastebin.com/raw/LINK', verify=False)
 
 def menu() -> None:
-  subprocess.run('cls' if platform.system() == 'Windows' else 'clear', shell=True)
+  subprocess.run('cls')
   print("hi")
 
 if hwid in request.text:
